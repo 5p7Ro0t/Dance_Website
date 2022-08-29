@@ -1,0 +1,27 @@
+extends base.pug
+   
+block scripts
+      script(src="../public/index.js") 
+block style 
+      style
+        include ../public/newstyle.css
+block content
+     h1 Fill This To Sign Up
+     form(action="/cont" method="post") 
+         div     
+          |Name : 
+          input(type="text" name="name" placeholder="Enter Your Name" )
+         div     
+          |Phone Number : 
+          input(type="phone" name="Phone" placeholder="Enter Your Phone Num" )
+         div     
+          |Email : 
+          input(type="email" name="Email" placeholder="Enter Your Email" )
+         div     
+          |Address : 
+          input(type="text" name="Address" placeholder="Enter Your Address" )
+         div     
+          |About : 
+          input(type="text-area" name="About" placeholder="About Your Self" )
+         button 
+             |SUBMIT 
